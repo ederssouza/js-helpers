@@ -1,26 +1,28 @@
 {
-  "name": "ts-library-boilerplate",
+  "name": "@ederssouza/js-helpers",
   "version": "1.0.0",
-  "description": "",
+  "description": "JavaScript Helpers",
   "main": "dist/index.js",
-  "module": "src/index.js",
   "libraryName": "JSLib",
   "license": "MIT",
-  "author": "USERNAME",
+  "author": "Eder Sampaio <edersampaio@outlook.com.br>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/USERNAME/PROJECT_NAME.git"
+    "url": "git+https://github.com/ederssouza/js-helpers.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/PROJECT_NAME/issues"
+    "url": "https://github.com/ederssouza/js-helpers/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/ederssouza/js-helpers#readme",
   "keywords": [
-    "library"
+    "library",
+    "javascript helpers",
+    "javascript",
+    "helper"
   ],
   "scripts": {
-    "test": "ts-mocha tests/**/*.spec.ts",
-    "test:watch": "yarn test --watch --recursive",
+    "test": "mocha",
+    "test:watch": "mocha --watch",
     "test:coverage": "nyc --reporter=html --reporter=text yarn test",
     "lint": "eslint src/**/*.ts",
     "generate-readme": "node ./generate-readme",
@@ -39,9 +41,11 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
+    "jsdom": "^16.6.0",
+    "jsdom-global": "^3.0.2",
     "mocha": "^9.0.1",
     "nyc": "^15.1.0",
-    "ts-mocha": "^8.0.0",
+    "ts-node": "^10.0.0",
     "typescript": "^4.3.4"
   }
 }
